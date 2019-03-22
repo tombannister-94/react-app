@@ -1,7 +1,7 @@
 # README #
 
 This is a simple base project to get you started on creating HTML templates.  
-Please update this readme with a description relevant to the project you're working on and remove steps 2 and 3 from the setup once complete.
+Please update this readme with a description relevant to the project you're working on.
 
 ## Setup ##
 

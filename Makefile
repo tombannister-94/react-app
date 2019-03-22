@@ -1,7 +1,7 @@
-.PHONY: build build-watch
+.PHONY: build watch
 
 build:
 	cd build && yarn && yarn run build
 
-build-watch:
+watch:
 	cd build && yarn && yarn run build:watch

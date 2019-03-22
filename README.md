@@ -15,7 +15,7 @@ This base is set up to use [Yarn](https://yarnpkg.com) and [Browserify](http://b
 
 It's configured to compile SASS into CSS and ES6 Javascript into standard JS.
 
-Running `make build` or `make build-watch` will compile everything into a single file in the `build/dist/js` and `build/dist/css` folders.
+Running `make build` or `make watch` will compile everything into a single file in the `build/dist/js` and `build/dist/css` folders.
 
 These two folders are symlinked into `src/templates/static/` in order to be accessible from there.
 

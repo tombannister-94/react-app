@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"file": "index.css",
+	"file": "main.css",
 	"sources": [
 		"../sass/main.scss",
 		"../sass/1_settings/_colours.scss",

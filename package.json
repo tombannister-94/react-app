@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.0.3",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^5.0.0",
+    "parallelshell": "^3.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -12,7 +15,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-assets": "yarn run build:css",
+    "build:css": "node-sass src/sass/main.scss src/css/index.css --output src/css --output-style compressed --source-map true && echo 'CSS built successfully'",
+    "build:watch": "parallelshell 'yarn run build:watch:css'",
+    "build:watch:css": "watch --interval 0.01 --wait 0.5 'yarn run build:css' src/sass/"
   },
   "eslintConfig": {
     "extends": "react-app"

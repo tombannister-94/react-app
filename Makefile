@@ -1,7 +1,7 @@
-.PHONY: build watch
+.PHONY: sass sass-watch
 
-build:
-	cd build && yarn && yarn run build
+sass:
+	cd src && yarn && yarn run build-assets
 
-watch:
-	cd build && yarn && yarn run build:watch
+sass-watch:
+	cd src && yarn && yarn run build:watch

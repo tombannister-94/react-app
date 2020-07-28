@@ -1,9 +1,11 @@
 import React from 'react';
+import DefaultButton from './components/button';
 
 function App() {
   return (
     <div>
-      <h1>Hello <strong>World</strong></h1>
+      <DefaultButton text="Click me" />
+      <DefaultButton text="No, click me!" extraClasses="btn--red" />
     </div>
   );
 }

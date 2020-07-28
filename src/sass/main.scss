@@ -1,24 +1,26 @@
-// Settings
-@import '1_settings/colours';
-@import '1_settings/typography';
 
-// Tools
-@import '2_tools/mixins';
+    // Settings
+    @import '1_settings/colours';
+    @import '1_settings/typography';
 
-// Generic
-@import '3_generic/normalize';
-@import '3_generic/box_sizing';
-@import '3_generic/shared';
+    // Tools
+    @import '2_tools/mixins';
 
-// Base Elements
-@import '4_base/generic';
-@import '4_base/typography';
+    // Generic
+    @import '3_generic/normalize';
+    @import '3_generic/box_sizing';
+    @import '3_generic/shared';
 
-// Objects
-@import '5_objects/wrapper';
+    // Base Elements
+    @import '4_base/generic';
+    @import '4_base/typography';
 
-// Components
-//@import '6_components/file';
+    // Objects
+    @import '5_objects/btn';
+    @import '5_objects/wrapper';
 
-// Trumps
-//@import '7_trumps/file';
+    // Components
+    //@import '6_components/file';
+
+    // Trumps
+    //@import '7_trumps/file';

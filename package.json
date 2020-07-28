@@ -10,6 +10,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "sass-lint": "^1.10.2",
     "semantic-ui-react": "^1.0.0"
   },
   "scripts": {
@@ -18,6 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build-assets": "yarn run build-assets:css",
+    "prebuild-assets:css": "sass-lint 'src/sass/**' --verbose --no-exit",
     "build-assets:css": "node-sass src/sass/main.scss src/dist/main.css --output dist/ --output-style compressed --source-map true && echo 'CSS built successfully'",
     "build-assets:watch": "parallelshell 'yarn run build-assets:watch:css'",
     "build-assets:watch:css": "watch --interval 0.01 --wait 0.5 'yarn run build-assets:css' src/sass/"

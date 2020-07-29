@@ -6,7 +6,6 @@
     "cra-template": "1.0.3",
     "node-sass": "^4.14.1",
     "normalize.css": "^5.0.0",
-    "parallelshell": "^3.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -21,8 +20,7 @@
     "build-assets": "yarn run build-assets:css",
     "prebuild-assets:css": "sass-lint 'src/sass/**' --verbose --no-exit",
     "build-assets:css": "node-sass src/sass/main.scss src/dist/main.css --output dist/ --output-style compressed --source-map true && echo 'CSS built successfully'",
-    "build-assets:watch": "parallelshell 'yarn run build-assets:watch:css'",
-    "build-assets:watch:css": "watch --interval 0.01 --wait 0.5 'yarn run build-assets:css' src/sass/"
+    "build-assets:watch": "watch --interval 0.01 --wait 0.5 'yarn run build-assets:css' src/sass/"
   },
   "eslintConfig": {
     "extends": "react-app"

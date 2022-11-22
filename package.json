@@ -8,7 +8,7 @@
     "normalize.css": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "sass-lint": "^1.10.2",
     "semantic-ui-react": "^1.0.0"
   },
